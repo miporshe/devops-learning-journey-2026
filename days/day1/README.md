@@ -1,33 +1,39 @@
-🚀 Day 1: Infrastructure Setup
-📅 Date: 11 January 2026
-🎯 What I Actually Did
-Tried VirtualBox + Ubuntu Desktop - laptop couldn't handle it
+# 🚀 Day 1: Choosing the infrastructure and the first steps
+## 📅 Date: January 11, 2026
 
-Switched to WSL2 - worked perfectly
+## 🎯 Plan vs reality
 
-Installed Ubuntu 24.04 LTS
+### What I thought I would do:
+- Install the "right" Linux through VirtualBox
+- Have a full-fledged Ubuntu GUI
+- Follow the "standard" learning path
 
-Got my first Linux terminal working
+### What actually happened:
+✅ **Tried VirtualBox + Ubuntu Desktop** - the laptop couldn't handle it 
+✅ **Explored alternatives** — found WSL2 
+✅ **Installed WSL2 with Ubuntu 24.04 LTS** — it worked! 
+✅ **Saw my first Linux terminal** — a small victory!
 
-💡 Key Learnings
-Choose tools that fit your hardware - WSL2 was the right choice for my laptop
+## 💡 Discoveries of the day
 
-Simple solutions can be professional - WSL2 is used by Microsoft engineers
+### 1. Tools should help, not hinder
+While trying to make VirtualBox work, I realized the most important thing: 
+**The right tool is the one that solves a problem, not creates new ones.** 
+WSL2 wasn't a "blanket" - it was a smart choice for my hardware.
 
+### 2. Simplicity can be professional
+In Russian-speaking IT, people often think that "complex = professional". 
+It turned out that **Microsoft engineers themselves use WSL2**. 
+If it suits them, it's definitely suitable for a beginner DevOps.
 
-📚 Commands I Used
-bash
-pwd     # Where am I?
-ls      # What's here?
-cd ~    # Go home
-whoami  # Check user
-uname -a # System info
-🛠️ Setup Process
-powershell
-# Windows PowerShell (Admin)
+### 3. The terminal is the beginning of the journey
+When I finally saw it:
+It wasn't just an input line. It was the **moment when "learning DevOps" became "doing DevOps"**.
+
+## 🛠 Technical steps
+
+### How I installed the environment:
+```powershell
+# In Windows PowerShell (as an administrator)
 wsl --install -d Ubuntu
-
-📝 Note to Self
-Starting DevOps isn't about perfect tools, it's about finding solutions that work. My laptop + WSL2 = perfect match.
-
-
+# I waited for 2 minutes... and it worked!
